@@ -132,7 +132,26 @@ app.get('/api/cards', (req, res) => {
 
 // ---------- 静态托管前端 ----------
 
-app.use(express.static(FRONTEND_DIR));
+// 显式设置 MIME 类型，解决 Render 代理层可能返回错误 Content-Type 的问题
+app.use(express.static(FRONTEND_DIR, {
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('.js')) {
+      res.setHeader('Content-Type', 'application/javascript; charset=UTF-8');
+    } else if (filePath.endsWith('.css')) {
+      res.setHeader('Content-Type', 'text/css; charset=UTF-8');
+    } else if (filePath.endsWith('.html')) {
+      res.setHeader('Content-Type', 'text/html; charset=UTF-8');
+    }
+  },
+}));
+
+// SPA 回退：所有未匹配路由返回 index.html
+app.get('*', (req, res) => {
+  if (req.path.startsWith('/api/')) {
+    return res.status(404).json({ error: 'API not found' });
+  }
+  res.sendFile(path.join(FRONTEND_DIR, 'index.html'));
+});
 
 app.listen(PORT, () => {
   console.log(`手绘城镇已开门营业 → http://localhost:${PORT}`);
