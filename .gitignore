@@ -16,3 +16,13 @@ Thumbs.db
 # 编辑器
 .vscode/
 .idea/
+
+# 根目录散落的素材原图（真正用到的在 frontend/assets_pack/）
+/lab.png
+/library.png
+/museum.png
+/preview.png
+/statue.png
+/town-ground.png
+/university-v2.png
+/walk-cycle.png
