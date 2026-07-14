@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的城镇 · 个人网站</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topbar">
+  <h1>🏠 我的城镇</h1>
+  <span class="sub">— 点击建筑进入</span>
+</div>
+
+<div id="stage">
+  <div id="town"><!-- 建筑和小人由 town.js 依据 config.js 生成 --></div>
+</div>
+
+<div class="foot">悬停看名字 · 点击建筑打开模块 · 小人正在散步 🚶</div>
+
+<div id="doorFlash"></div>
+<div id="overlays"><!-- 五个模块的内容页由 modules.js 生成 --></div>
+
+<script src="js/config.js"></script>
+<script src="js/modules.js"></script>
+<script src="js/town.js"></script>
+</body>
+</html>

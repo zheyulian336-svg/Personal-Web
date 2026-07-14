@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026.01–2026.06",
+    "title": "OpenAI Australia · Forward Deployed Engineer",
+    "desc": "常驻客户侧交付 OpenAI × AP+ 企业级 AI 转型项目，负责「问题调查与分析」方向的全链路落地：需求调研、方案设计、PoC 验证到架构迭代。",
+    "tag": "工作"
+  },
+  {
+    "date": "2026",
+    "title": "多 Agent 动态路由系统（OpenAI × AP+）",
+    "desc": "基于 ChatGPT Enterprise 与 Codex，用 Orchestrator 模式由 Manager Agent 编排多个专职 Agent，将架构从固定链路演进为「固定 + 动态路由」混合架构，引入 Agent 池化、Capability Card 与 Embedding 混合搜索。",
+    "tag": "项目"
+  },
+  {
+    "date": "2026",
+    "title": "动态路由效果评测与提效成果",
+    "desc": "基于 100 任务评测集独立评测：必要 Agent 召回率约 97%、精确率约 89%、无效调用率约 11%，Agent 调用总量下降约 29%。团队借助 Codex 将一次复杂对账调查从约 4 小时缩短至约 30 分钟。方案获资深 FDE 认可并落地，被 OpenAI 收录为官方客户案例。",
+    "tag": "项目"
+  },
+  {
+    "date": "2022.02–2025.10",
+    "title": "The University of Sydney 悉尼大学 · Software Engineering",
+    "desc": "软件工程专业，具备扎实的软件工程基础、系统架构理解与代码 review / 调试能力。",
+    "tag": "教育"
+  }
+]

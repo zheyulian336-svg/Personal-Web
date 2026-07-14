@@ -1,0 +1,17 @@
+{
+  "name": "hand-drawn-town-backend",
+  "version": "1.0.0",
+  "description": "手绘城镇个人网站 — 后端 API（Blogger/GitHub 代理 + 配置数据接口），同时托管前端静态文件",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
