@@ -1,0 +1,11 @@
+# Render Blueprint — 一键部署配置
+# 在 Render 上点 New → Blueprint → 连接仓库即可自动部署
+services:
+  - type: web
+    name: personal-web
+    env: node
+    region: singapore
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
